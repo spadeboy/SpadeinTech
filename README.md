@@ -1,4 +1,4 @@
-echo "# Spade inTech Portfolio
+Spade inTech Portfolio
 
 The official web presence of **Spade inTech**. This site serves as our primary portfolio, detailing our mission, core services, and client success stories.
 

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spade in Tech | Premium Digital Solutions</title>
+    <!-- Spade Favicon (White, Maximized) -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 font-size=%22100%22 fill=%22white%22 dominant-baseline=%22central%22 text-anchor=%22middle%22>♠</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+    </div>
+
+    <header class="glass-header">
+        <nav>
+            <div class="logo-container">
+                <a href="#" class="logo-text">Spade <span class="logo-icon">♠</span> in Tech</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Elevate Your Digital <span class="gradient-text">Presence</span></h1>
+
+            <div class="spade-center-container">
+                <svg viewBox="0 0 200 220" class="hero-spade-svg">
+                    <defs>
+                        <!-- Filter for Left Half -->
+                        <filter id="dustFilterLeft" x="-50%" y="-50%" width="200%" height="200%">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+                            <feDisplacementMap id="dispMapLeft" in="SourceGraphic" in2="noise" scale="0"
+                                xChannelSelector="R" yChannelSelector="G" />
+                        </filter>
+                        <!-- Filter for Right Half -->
+                        <filter id="dustFilterRight" x="-50%" y="-50%" width="200%" height="200%">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+                            <feDisplacementMap id="dispMapRight" in="SourceGraphic" in2="noise" scale="0"
+                                xChannelSelector="R" yChannelSelector="G" />
+                        </filter>
+                    </defs>
+
+                    <!-- Left Half -->
+                    <a href="#services" class="spade-half left-half">
+                        <path d="M100 25 C 70 25, 20 80, 20 120 C 20 155, 60 170, 100 150 Z" class="spade-path left"
+                            style="filter: url(#dustFilterLeft);" />
+                        <text x="30" y="100" class="hover-text left-text"
+                            style="font-size: 14px; fill: black; font-weight: 700;">Explore</text>
+                        <text x="30" y="120" class="hover-text left-text"
+                            style="font-size: 14px; fill: black; font-weight: 700;">Services</text>
+                    </a>
+
+                    <!-- Right Half -->
+                    <a href="#contact" class="spade-half right-half">
+                        <path d="M100 25 C 130 25, 180 80, 180 120 C 180 155, 140 170, 100 150 Z"
+                            class="spade-path right" style="filter: url(#dustFilterRight);" />
+                        <text x="110" y="110" class="hover-text right-text">Get in</text>
+                        <text x="110" y="130" class="hover-text right-text">Touch</text>
+                    </a>
+
+                    <!-- Stem -->
+                    <g class="spade-stem" style="cursor: pointer;">
+                        <path d="M100 150 L100 190" stroke="white" stroke-width="6" stroke-linecap="round" />
+                        <path d="M80 200 Q 100 150 120 200" fill="transparent" stroke="white" stroke-width="4"
+                            style="opacity: 0.5" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Expertise</h2>
+            <div class="services-grid">
+                <div class="service-card glass-card" data-service="data-management">
+                    <div class="icon-container"><i class="fas fa-database"></i></div>
+                    <h3>Data Management</h3>
+                    <p>Streamline your business intelligence with our robust data solutions.</p>
+                </div>
+                <div class="service-card glass-card" data-service="web-app">
+                    <div class="icon-container"><i class="fas fa-code"></i></div>
+                    <h3>Web Application</h3>
+                    <p>Building powerful, interactive tools tailored to your workflow.</p>
+                </div>
+                <div class="service-card glass-card" data-service="portfolio">
+                    <div class="icon-container"><i class="fas fa-briefcase"></i></div>
+                    <h3>Portfolio</h3>
+                    <p>Your digital first impression, perfected with high-end aesthetics.</p>
+                </div>
+                <div class="service-card glass-card" data-service="poster-design">
+                    <div class="icon-container"><i class="fas fa-palette"></i></div>
+                    <h3>Poster Design</h3>
+                    <p>Capture attention with impactful visual storytelling and digital portraits.</p>
+                </div>
+                <!-- Resume Builder card removed or consolidated as per simpler layout to match previous effort -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="glass-card contact-form-container fade-in-section">
+                <h2>Get in <span class="gradient-text">Touch</span></h2>
+                <p>Ready to start your project? Send us a message.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder="Project Details"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Detail Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Service Title</h2>
+            <div id="modalBody">Service details go here.</div>
+        </div>
+    </div>
+
+    <!-- Contact Method Modal -->
+    <div id="contactMethodModal" class="modal">
+        <div class="modal-content glass-card contact-modal-inner">
+            <span class="close-modal" id="closeContactMethod">&times;</span>
+
+            <div id="modalContentWrapper">
+                <div class="modal-icon-header">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <h2>Choose Method</h2>
+                <p class="modal-description">How would you like to submit your inquiry?</p>
+
+                <div class="modal-actions">
+                    <button id="btnDirectSend" class="btn-primary full-width">
+                        <i class="fas fa-bolt"></i> Send Now (Direct)
+                    </button>
+                    <button id="btnMailApp" class="btn-secondary full-width">
+                        <i class="fas fa-envelope-open-text"></i> Send via Mail App
+                    </button>
+                </div>
+                <p id="sendFeedback" style="display: none; margin-top: 1rem; font-size: 0.9rem;"></p>
+            </div>
+
+            <!-- Success View (Hidden by default) -->
+            <div id="modalSuccessView" style="display: none; text-align: center;">
+                <div class="success-icon-container" style="font-size: 4rem; color: #4CAF50; margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle bounce-animation"></i>
+                </div>
+                <h2 style="color: #fff;">Sent Successfully!</h2>
+                <p style="color: #ccc;">We'll get back to you shortly.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <footer class="glass-footer">
+        <p>&copy; 2026 Spade in Tech. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

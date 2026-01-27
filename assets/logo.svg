@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spade-logo">
+  <defs>
+    <linearGradient id="spadeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#bbb" />
+      <stop offset="100%" style="stop-color:#fff" />
+    </linearGradient>
+  </defs>
+  <path d="M50 20 C50 20 20 50 20 70 A15 15 0 0 0 50 85 A15 15 0 0 0 80 70 C80 50 50 20 50 20 Z" fill="url(#spadeGradient)" stroke="none" />
+  <path d="M50 85 L50 95" stroke="#fff" stroke-width="4" />
+  <circle cx="50" cy="55" r="5" fill="#111" />
+</svg>

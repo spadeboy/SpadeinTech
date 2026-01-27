@@ -1,0 +1,16 @@
+{
+  "name": "spade-in-tech",
+  "version": "1.0.0",
+  "description": "Spade in Tech Company Website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}

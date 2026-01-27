@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&amp;display=swap');
+    .text { fill: #ffffff; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 48px; }
+  </style>
+  <text x="10" y="58" class="text">Spade</text>
+  <!-- Spade Icon: top point lowered to 32, bottom body at 68, stem shortened -->
+  <path d="M185 32 C185 32 165 50 165 62 A9 9 0 0 0 183 70 L185 76 L187 70 A9 9 0 0 0 205 62 C205 50 185 32 185 32 Z" fill="#ffffff" />
+  <text x="215" y="58" class="text">in Tech</text>
+</svg>
